@@ -462,6 +462,18 @@ p {
   flex-direction: column;
 }
 
+#hero button {
+  width: 300px;
+  height: 50px;
+  border-radius: 20px;
+  border: 1px solid #7289da;
+  position: absolute;
+  top: 50%;
+  left: 18%;
+  margin: -25px 0 0 -25px;
+  background-color: #7289da;
+}
+
 .hero-content h1 {
   font-size: 40px;
   font-weight: 700;
@@ -620,6 +632,45 @@ p {
 }
 
 #about .about-descr .separator {
+  max-width: 80%;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Invite
+/*-----------------------------------------------------------------------------------*/
+#Invite {
+  width: 100%;
+  height: 100px;
+  background: #2c2f33;
+  padding-top: 120px;
+}
+
+
+
+#Invite .div-img-bg {
+  padding-bottom: 30px;
+  border: 20px solid #7289da;
+}
+
+#Invite .div-img-bg .about-img img {
+  width: 100%;
+  box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
+  margin-top: -60px;
+  margin-left: 40px;
+  height: 400px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+#Invite .about-descr .p-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  text-align: left;
+}
+
+#Invite .about-descr .separator {
   max-width: 80%;
   margin-bottom: 0;
   text-align: left;
