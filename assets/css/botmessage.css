@@ -1,0 +1,49 @@
+body {
+    background-color: #1d1d1d;
+}
+
+.discord-messages {
+    color: #fff;
+    background-color: #36393b;
+    display: block;
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: Whitney, Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 170%;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.title {
+    border-bottom: 0px solid #4a4a4a;
+    padding-bottom: 0.25em;
+}
+
+.discord-message:hover {
+    border-radius: 15px;
+    background-color: rgba(4, 4, 5, 0.07);
+}
+
+.discord-message .discord-author-info .discord-author-username:hover {
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.discord-replied-message.discord-executed-command .discord-replied-message-username:hover {
+    margin-right: 0;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.discord-message .discord-author-avatar img:hover {
+    cursor: pointer;
+}
+
+.discord-embed .discord-embed-thumbnail:hover {
+    cursor: pointer;
+}
+
+.discord-embed .discord-embed-image:hover {
+    cursor: pointer;
+}

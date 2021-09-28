@@ -1597,11 +1597,10 @@ details {
     min-height: 5px;
     border-radius: 10px;
     background-color: #23272a;
-    padding: 10px 70px 10px 45px;
+    padding: 20px 70px 20px 45px;
     margin: 0 auto;
     position: relative;
     font-size: 22px;
-    border: 1px solid #fa51a2;
     border-radius: 10px;
     box-sizing: border-box;
     transition: all .3s;
@@ -1615,7 +1614,6 @@ details+details {
 
 details[open] {
     min-height: 50px;
-    border: 1px solid #7289da;
     border-radius: 10px;
     background-color: #23272a;
     box-shadow: 3px 3px 21px rgba(0, 0, 0, .2);
@@ -1709,4 +1707,202 @@ details[open] .control-icon-close {
 
 details[open] .control-icon-expand {
     display: none;
+}
+
+
+/* MAIN TABLE */
+
+
+maintable {
+    width: 75%;
+    min-height: 5px;
+    border-radius: 10px;
+    background-color: #23272a;
+    padding: 20px 70px 20px 45px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 22px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+
+
+maintable+maintable {
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+maintable[open] {
+    min-height: 50px;
+    border-radius: 10px;
+    background-color: #23272a;
+    box-shadow: 3px 3px 21px rgba(0, 0, 0, .2);
+}
+
+maintable p {
+    color: #96999d;
+    font-weight: 300;
+}
+
+maintable b {
+    font-weight: 800;
+}
+
+maintable k {
+    color: #fff;
+    padding: 2px 2px 2px 2px;
+    border-radius: 3px;
+    background-color: #3a3333;
+    font-weight: 800;
+}
+
+maintable brack {
+    color: #fa51a2;
+    font-weight: 800;
+}
+
+maintable opt {
+    color: #2d25da;
+    font-weight: 800;
+}
+
+maintable mention {
+    border-radius: 3px;
+    padding: 0 2px;
+    color: #fdfdfd;
+    background: rgba(114, 137, 218, .4);
+    font-weight: 500;
+}
+
+maintable c {
+    color: #fff;
+    padding: 2px 2px 2px 2px;
+    border-radius: 3px;
+    background-color: #1E1919;
+    font-weight: 800;
+}
+
+summary {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+summary t {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+summary d {
+    margin-left: 40px;
+    color: #18d26e;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+summary:focus {
+    outline: none;
+
+}
+
+summary:focus::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+summary::-webkit-details-marker {
+    display: none
+}
+
+.control-icon {
+    fill: #7289da;
+    transition: .3s ease;
+    pointer-events: none;
+}
+
+.control-icon-close {
+    display: none;
+}
+
+maintable[open] .control-icon-close {
+    display: initial;
+    transition: .3s ease;
+}
+
+maintable[open] .control-icon-expand {
+    display: none;
+}
+
+@media only screen and (max-width: 479px) {
+    .discord-messages {
+        display: none !important;
+        visibility: hidden;
+    }
+
+    summary d {
+        margin-left: 0px;
+        color: #18d26e;
+        font-size: 14px;
+        cursor: pointer;
+    }
+}
+
+.discord-button.discord-button-secondary:hover {
+    background-color: #747a81;
+}
+
+.discord-messages {
+    margin-top: 50px;
+    color: #fff;
+    background-color: #36393b;
+    display: block;
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: Whitney, Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 170%;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.title {
+    border-bottom: 0px solid #4a4a4a;
+    padding-bottom: 0.25em;
+}
+
+.discord-message:hover {
+    border-radius: 15px;
+    background-color: rgba(4, 4, 5, 0.07);
+}
+
+.discord-message .discord-author-info .discord-author-username:hover {
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.discord-replied-message.discord-executed-command .discord-replied-message-username:hover {
+    margin-right: 0;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.discord-message .discord-author-avatar img:hover {
+    cursor: pointer;
+}
+
+.discord-embed .discord-embed-thumbnail:hover {
+    cursor: pointer;
+}
+
+.discord-embed .discord-embed-image:hover {
+    cursor: pointer;
 }

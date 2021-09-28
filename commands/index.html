@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ut/8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <meta name="description" content="Welcome to Furnace. A multi-purpose discord bot. With many cool features.">
+    <meta name="keywords" content="admin, bot, Furnace, website, discord, discordapp, discordbot, minecraft, commands">
+    <title>Furnace</title>
+    <meta name="theme-color" content="#fa51a2">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./assets/img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./assets/img/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./assets/img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./assets/img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./assets/img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#fa51a2" />
+    <meta name="msapplication-TileImage" content="./assets/img/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="./assets/img/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="./assets/img/favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="./assets/img/favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="./assets/img/favicon/mstile-310x310.png" />
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Furnace">
+    <meta property="og:description" content="Official home page of Furnace discord bot.">
+    <meta property="og:thumbnail" content="/static/app-assets/images/logo/logo.png">
+    <meta name="twitter:card" content="app">
+    <meta name="twitter:title" content="Furnace">
+    <meta name="twitter:description" content="Official home page of Furnace discord bot.">
+    <meta name="twitter:thumbnail" content="/static/app-assets/images/logo/logo.png">
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <script src="https://kit.fontawesome.com/42e4ae6874.js" crossorigin="anonymous"></script>
+    <link href="../assets/css/commands.css" rel="stylesheet">
+    <style>
+        body {
+            color: #eee;
+            background-color: #2a2a2a;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: #0099ff;
+        }
+
+        a:hover {
+            color: #037cce;
+        }
+
+        .logo {
+            display: inline-block;
+            font-weight: bold;
+            font-size: 2em;
+            margin: 0;
+        }
+
+        .title {
+            border-bottom: 1px solid #4a4a4a;
+            padding-bottom: 0.25em;
+        }
+    </style>
+    <script type="module" src="https://unpkg.com/@skyra/discord-components-core"></script>
+    <script>
+        window.$discordMessage = {
+            profiles: {
+                furnace: {
+                    author: "Furnace",
+                    avatar: `https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp`,
+                    roleColor: "#010c5b"
+                },
+                arr4nn: {
+                    author: "ARR4NN",
+                    avatar: "https://upload.arr4nn.ml/Leqi0/VEYAdEDi14.png/raw",
+                    roleColor: "#a155ab"
+                }
+            }
+        };
+    </script>
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+            <!-- Uncomment below if you prefer to use an text logo -->
+            <!-- <h1 class="logo"><a href="index.html">Folio</a></h1> -->
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="../index.html">Home</a></li>
+                    <li><a class="nav-link  scrollto" href="/commands/">Commands</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <div id="hero" class="home">
+
+        <div class="container">
+            <div class="hero-content">
+                <h1><span class="typed" data-typed-items="I am Furnace, Multi-purpose discord bot"></span>
+                </h1>
+                <p>Made by ARR4NN#0340</p>
+
+                <ul class="list-unstyled list-social">
+                    <li><a href="https://github.com/ARR4NN"><i class="bi bi-github"></i></a></li>
+                    <li><a href="../discord/index.html"><i class="bi bi-discord"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- End Hero -->
+
+    <div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <symbol viewBox="0 0 24 24" id="expand-more">
+                <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+                <path d="M0 0h24v24H0z" fill="none" />
+            </symbol>
+            <symbol viewBox="0 0 24 24" id="close">
+                <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                <path d="M0 0h24v24H0z" fill="none" />
+            </symbol>
+        </svg>
+    </div>
+
+    <!-- <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            Music [12]
+        </summary>
+        <p>
+            <opt>[</opt>Optional<opt>]</opt>
+            <brack>{</brack>Required<brack>}</brack><br><br>
+            <c>/play <brack>{</brack>Link / Song Name<brack>}</brack>
+            </c> | Play a track from youtube. Permission: [Everyone]<br>
+            <c>/back</c> | Rewind to last track in queue. Permission: [Everyone]<br>
+            <c>/clearq</c> | Clear all music from queue. Permission: [Everyone]<br>
+            <c>/join</c> | Ask <mention>@Furnace</mention> to join VC. Permission: [Everyone]<br>
+            <c>/leave</c> | Furnace will leave VC. Permission: [Everyone]<br>
+            <c>/lyrics</c> | Display current song's lyrics. Permission: [Everyone]<br>
+            <c>/next</c> | Skip to next song in queue. Permission: [Everyone]<br>
+            <c>/np</c> | Display currently playing song. Permission: [Everyone]<br>
+            <c>/pause</c> | Pause the music queue. Permission: [Everyone]<br>
+            <c>/queue</c> | List all songs in the queue. Permission: [Everyone]<br>
+            <c>/stop</c> | Stop the music player. Permission: [Everyone]<br>
+            <c>/volume</c> | Set the volume of the player. Permission: [Everyone]<br>
+
+        </p>
+
+    </details> -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/ping</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API and the bots message latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping"></discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+
+    </details>
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/credits</t>
+            <d>Credits to the Furnace author's.</d>
+        </summary>
+        <p>/credits replies with a list of contributes that helped to make Furnace as good as it is.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/credits"></discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="Furnace Development">
+                    <discord-embed-fields slot="fields">
+                        <discord-embed-field field-title="Created By" inline inline-index="1">
+                            ARR4NN#0340
+                        </discord-embed-field>
+                        <discord-embed-field field-title="Assisted By" inline inline-index="2">
+                            Aky#8808
+                        </discord-embed-field>
+                        <discord-embed-field field-title="Created in" inline inline-index="3">
+                            Discord.js
+                        </discord-embed-field>
+                    </discord-embed-fields>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/invite</t>
+            <d>Invite Furnace to your server.</d>
+        </summary>
+        <p>Use the /invite command to be given a direct link to invite Furnace</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/invite"></discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="Invite Furnace">
+                    Invite Furnace to your own server to take advantage of the minecraft tips and tricks!
+                    <b>Click the button below to invite me.</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+                <discord-attachments slot="components">
+                    <discord-action-row>
+                        <discord-button
+                            url="https://discord.com/oauth2/authorize?client_id=873142163800748062&permissions=738585670&scope=bot">
+                            Invite Me
+                        </discord-button>
+                    </discord-action-row>
+                </discord-attachments>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/stats</t>
+            <d>Get up to date Furnace statistics</d>
+        </summary>
+        <p>Using /stats will reply with total guilds Furnace is in and total member count of them guilds.
+        </p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/stats"></discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="Bot Statistics:" author-image="https://upload.arr4nn.ml/Leqi0/VEYAdEDi14.png/raw"
+                    author-name="ARR4NN#0340"
+                    thumbnail="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp">
+                    <discord-embed-fields slot="fields">
+                        <discord-embed-field field-title="Total Guilds">
+                            Number lol
+                        </discord-embed-field>
+                        <discord-embed-field field-title="Total Guild Member count:">
+                            Another number
+                        </discord-embed-field>
+                    </discord-embed-fields>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+                <discord-attachments slot="components">
+                    <discord-action-row>
+                        <discord-button
+                            url="https://discord.com/oauth2/authorize?client_id=873142163800748062&permissions=738585670&scope=bot">
+                            Invite Me
+
+                        </discord-button>
+                    </discord-action-row>
+                </discord-attachments>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/jointest</t>
+            <d>Send a fake join to the guild</d>
+        </summary>
+        <p>The /jointest command will send a welcome message to the set welcome channel with the welcome message. Useful
+            for testing your settings.
+            latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/jointest"></discord-command>
+                Sent a welcome message.
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/8ball</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API and the bots message
+            latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping"></discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/avatar</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API and the bots
+            message latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping"></discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+            </svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/coinflip</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API and the bots
+            message latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                </discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+            </svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/google</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API and the
+            bots message latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                </discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+            </svg>
+            <t>/name</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API and
+            the bots message latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                </discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/commands</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API
+            and the bots message latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                </discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/charts</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API and the bots message latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping"></discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/death</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API and the bots message latency.
+        </p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping"></discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/kill</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API and the bots message
+            latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping"></discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/minecraft-wiki</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API and the bots message
+            latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping"></discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/nether</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API and the bots
+            message latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping"></discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+            </svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/player</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API and the bots
+            message latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                </discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+            </svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/server</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API and the bots
+            message latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                </discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+            </svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/sign</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API and the bots
+            message latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                </discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+            </svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/ban</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API and the bots
+            message latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                </discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+            </svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/kick</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API and the bots
+            message latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                </discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+            </svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/modhistory</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API and the bots
+            message latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                </discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+            </svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/punishments</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API and the bots
+            message latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                </discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+            </svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/purge</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API and the
+            bots
+            message latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                </discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+            </svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+            </svg>
+            <t>/resetwarnings</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API and
+            the bots
+            message latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                </discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+            </svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/slowmode</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API
+            and the bots
+            message latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                </discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+            </svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/sudo</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API and the bots
+            message latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                </discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+            </svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/unban</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API and the bots
+            message latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                </discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+            </svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/unwarn</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API and the bots
+            message latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                </discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+            </svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/warn</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API and the bots
+            message latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                </discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+            </svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/settings</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API and the bots
+            message latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                </discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+    <!-- NEW COMMAND -->
+    <details>
+        <summary>
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+            </svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            <t>/rank</t>
+            <d>Information on Furnace's speeds.</d>
+        </summary>
+        <p>The /ping command replies with information on the bots speed to the API and the bots
+            message latency.</p>
+        <discord-messages>
+            <discord-message profile="furnace">
+                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                </discord-command>
+                <discord-embed slot="embeds" color="#0F52BA"
+                    footer-image="https://cdn.discordapp.com/avatars/873142163800748062/d71d6c20dc06e7c83f3afe42eca36bfa.webp"
+                    embed-title="🏓 Pong">
+                    Latency <b>203ms</b>
+                    Api Latency <b>106ms</b>
+                    <span slot="footer">Furnace</span>
+                </discord-embed>
+            </discord-message>
+        </discord-messages>
+    </details>
+    <!-- END OF COMMAND -->
+
+    <!-- ======= About Section ======= -->
+
+
+
+    <!-- ======= Footer ======= -->
+    <div id="footer" class="text-center">
+        <div class="container">
+            <div class="socials-media text-center">
+
+                <ul class="list-unstyled">
+                    <li><a href="../discord/index.html"><i class="bi bi-discord"></i></a></li>
+                </ul>
+
+            </div>
+
+            <p>&copy; Copyright Furnace. <br>All rights reserved.</p>
+
+            <div class="credits">
+                Created by ARR4NN
+            </div>
+
+        </div>
+    </div><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/typed.js/typed.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
