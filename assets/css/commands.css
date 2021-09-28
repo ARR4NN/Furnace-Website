@@ -1906,3 +1906,11 @@ maintable[open] .control-icon-expand {
 .discord-embed .discord-embed-image:hover {
     cursor: pointer;
 }
+
+.center h1 {
+    text-align: center;
+    margin-bottom: 300px;
+    margin-top: 100px;
+    color: cyan;
+
+}
