@@ -1,0 +1,80 @@
+body {
+    background: #2c2f33;
+    color: #ffffff;
+    font-family: 'Poppins', helvetica;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    overflow-x: hidden;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .main-content {
+    padding-top: 140px;
+} */
+/* @import url('../fonts/MinecraftTen-VGORe.ttf'); */
+@font-face {
+    font-family: Minecraft-Ten;
+    src: url('../fonts/MinecraftTen-VGORe.ttf');
+}
+
+@font-face {
+    font-family: Minecraft-Bold;
+    src: url('../fonts/MinecraftTEXT.otf');
+}
+
+#oopslost h1 {
+    font-family: Minecraft-Ten;
+    text-align: center;
+    font-size: 200px;
+    color: aqua;
+}
+
+#oopslost p {
+    font-family: Minecraft-Bold;
+    text-align: center;
+    font-size: 50px;
+    line-height: 50px;
+    color: -webkit-linear-gradient(#eee, #333);
+}
+
+#oopslost img mc_fire {
+    position: relative;
+}
+
+#minecraft_fire img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 300px;
+}
+
+#oopslost button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    color: white;
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid #4e2cac;
+    background-color: #4e2cac;
+}
+
+#oopslost button:hover {
+    box-shadow: 2px 2px #99aab5;
+}
+
+#hero {
+    height: 100px;
+}
+
+@media only screen and (max-width: 479px) {
+    #oopslost button {
+        display: none !important;
+    }
+}
