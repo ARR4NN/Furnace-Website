@@ -99,12 +99,19 @@
                 furnace: {
                     author: "Furnace",
                     avatar: `../assets/img/logo.png`,
+                    bot: true,
                     roleColor: "#010c5b"
                 },
                 arr4nn: {
                     author: "ARR4NN",
                     avatar: "../assets/img/ARR4NN.png",
                     roleColor: "#a155ab"
+                },
+                arr4nn2bot: {
+                    author: "ARR4NN2",
+                    avatar: "../assets/img/ARR4NN2.png",
+                    roleColor: "#9FD61C",
+                    bot: true
                 }
             }
         };
@@ -663,9 +670,6 @@
             </discord-message>
         </discord-messages>
     </details>
-    <div class="center">
-        <h1>⚠ ANYTHING PAST THIS POINT IS NOT COMPLETE ⚠</h1>
-    </div>
     <!-- END OF COMMAND -->
     <!-- NEW COMMAND -->
     <details>
@@ -676,19 +680,30 @@
             <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
             <t>/server</t>
-            <d>Information on Furnace's speeds.</d>
+            <d>Get information about a minecraft server.</d>
         </summary>
-        <p>The /ping command replies with information on the bots speed to the API and the bots
-            message latency.</p>
+        <p>Use /server to get information on a minecraft server like: <br>× Player Count<br>× Version<br>× MOTD.</p>
         <discord-messages>
             <discord-message profile="furnace">
-                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                <discord-command slot="reply" profile="arr4nn" command="/server">
                 </discord-command>
-                <discord-embed slot="embeds" color="#0F52BA" footer-image="../assets/img/logo.png"
-                    embed-title="🏓 Pong">
-                    Latency <b>203ms</b>
-                    Api Latency <b>106ms</b>
+                <discord-embed slot="embeds"
+                    thumbnail="https://vignette.wikia.nocookie.net/youtube/images/9/90/Hypixel.jpg" color="#0F52BA"
+                    footer-image="../assets/img/logo.png" embed-title="Server Online!">
+                    <b>hypixel.net</b>
                     <span slot="footer">Furnace</span>
+                    <discord-embed-fields slot="fields">
+                        <discord-embed-field field-title="Total Players" inline inline-index="1">
+                            91858 / 200000
+                        </discord-embed-field>
+                        <discord-embed-field field-title="Version" inline inline-index="2">
+                            Requires MC 1.8 / 1.17
+                        </discord-embed-field>
+                        <discord-embed-field field-title="MOTD">
+                            <code> Hypixel Network [1.8-1.17]<br>
+                                MURDER MYSTERY UPDATE</code>
+                        </discord-embed-field>
+                    </discord-embed-fields>
                 </discord-embed>
             </discord-message>
         </discord-messages>
@@ -703,20 +718,16 @@
             <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
             <t>/sign</t>
-            <d>Information on Furnace's speeds.</d>
+            <d>Create a sign from your message.</d>
         </summary>
-        <p>The /ping command replies with information on the bots speed to the API and the bots
-            message latency.</p>
+        <p>Create a realistic minecraft sign from discord</p>
         <discord-messages>
             <discord-message profile="furnace">
-                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                <discord-command slot="reply" profile="arr4nn" command="/sign">
                 </discord-command>
-                <discord-embed slot="embeds" color="#0F52BA" footer-image="../assets/img/logo.png"
-                    embed-title="🏓 Pong">
-                    Latency <b>203ms</b>
-                    Api Latency <b>106ms</b>
-                    <span slot="footer">Furnace</span>
-                </discord-embed>
+                <discord-attachment slot="attachments"
+                    url="https://cdn.discordapp.com/attachments/876060604425719860/894239715933421588/profile-image.png"
+                    alt="sign" />
             </discord-message>
         </discord-messages>
     </details>
@@ -730,18 +741,26 @@
             <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
             <t>/ban</t>
-            <d>Information on Furnace's speeds.</d>
+            <d>Ban a user from the guild.</d>
         </summary>
-        <p>The /ping command replies with information on the bots speed to the API and the bots
-            message latency.</p>
+        <p>Ban a member from the guild with an optional reason.</p>
         <discord-messages>
             <discord-message profile="furnace">
-                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                <discord-command slot="reply" profile="arr4nn" command="/ban">
                 </discord-command>
-                <discord-embed slot="embeds" color="#0F52BA" footer-image="../assets/img/logo.png"
-                    embed-title="🏓 Pong">
-                    Latency <b>203ms</b>
-                    Api Latency <b>106ms</b>
+                <discord-embed slot="embeds" color="#0F52BA" thumbnail="../assets/img/ARR4NN2.png"
+                    footer-image="../assets/img/logo.png" embed-title="Member Banned">
+                    <discord-embed-fields slot="fields">
+                        <discord-embed-field field-title="User Banned">
+                            <discord-mention>ARR4NN2</discord-mention>
+                        </discord-embed-field>
+                        <discord-embed-field field-title="Banned by">
+                            <discord-mention>ARR4NN</discord-mention>
+                        </discord-embed-field>
+                        <discord-embed-field field-title="Reason">
+                            Posted memes in general!
+                        </discord-embed-field>
+                    </discord-embed-fields>
                     <span slot="footer">Furnace</span>
                 </discord-embed>
             </discord-message>
@@ -757,18 +776,26 @@
             <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
             <t>/kick</t>
-            <d>Information on Furnace's speeds.</d>
+            <d>Kick user from guild.</d>
         </summary>
-        <p>The /ping command replies with information on the bots speed to the API and the bots
-            message latency.</p>
+        <p>Kick a mmeber from guild with an optional reason.</p>
         <discord-messages>
             <discord-message profile="furnace">
-                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                <discord-command slot="reply" profile="arr4nn" command="/kick">
                 </discord-command>
-                <discord-embed slot="embeds" color="#0F52BA" footer-image="../assets/img/logo.png"
-                    embed-title="🏓 Pong">
-                    Latency <b>203ms</b>
-                    Api Latency <b>106ms</b>
+                <discord-embed slot="embeds" color="#0F52BA" thumbnail="../assets/img/ARR4NN2.png"
+                    footer-image="../assets/img/logo.png" embed-title="Member Kicked">
+                    <discord-embed-fields slot="fields">
+                        <discord-embed-field field-title="User Kicked">
+                            <discord-mention>ARR4NN2</discord-mention>
+                        </discord-embed-field>
+                        <discord-embed-field field-title="Kicked by">
+                            <discord-mention>ARR4NN</discord-mention>
+                        </discord-embed-field>
+                        <discord-embed-field field-title="Reason">
+                            Go away!!
+                        </discord-embed-field>
+                    </discord-embed-fields>
                     <span slot="footer">Furnace</span>
                 </discord-embed>
             </discord-message>
@@ -784,20 +811,44 @@
             <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
             <t>/modhistory</t>
-            <d>Information on Furnace's speeds.</d>
+            <d>Check punishment's from a staff member.</d>
         </summary>
-        <p>The /ping command replies with information on the bots speed to the API and the bots
-            message latency.</p>
+        <p>Check all punishment's made by a staff member.</p>
         <discord-messages>
             <discord-message profile="furnace">
-                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                <discord-command slot="reply" profile="arr4nn" command="/modhistory">
                 </discord-command>
                 <discord-embed slot="embeds" color="#0F52BA" footer-image="../assets/img/logo.png"
-                    embed-title="🏓 Pong">
-                    Latency <b>203ms</b>
-                    Api Latency <b>106ms</b>
+                    embed-title="ARR4NN's History">
+                    -----------------------<br>
+                    <b>Type:</b> Kick<br>
+                    <b>Punishment ID:</b> 74<br>
+                    <b>Reason:</b> Unspecified<br>
+                    <b>Member:</b>
+                    <discord-mention>ARR4NN2</discord-mention><br>
+                    <b>Time/Date:</b> 3 October 2021 16:16 / a minute ago<br>
+                    -----------------------<br>
+                    <b>Type:</b> Warning<br>
+                    <b>Punishment ID:</b> 73<br>
+                    <b>Reason:</b> Unspecified<br>
+                    <b>Member:</b>
+                    <discord-mention>ARR4NN2</discord-mention><br>
+                    <b>Time/Date:</b> 3 October 2021 16:16 / a minute ago<br>
+                    -----------------------<br>
+                    <b>Type:</b> Ban<br>
+                    <b>Punishment ID:</b> 72<br>
+                    <b>Reason:</b> Unspecified<br>
+                    <b>Member:</b>
+                    <discord-mention>ARR4NN2</discord-mention><br>
+                    <b>Time/Date:</b> 3 October 2021 16:16 / a minute ago<br>
                     <span slot="footer">Furnace</span>
                 </discord-embed>
+                <discord-attachments slot="components">
+                    <discord-action-row>
+                        <discord-button type="secondary" disabled>⏪Back</discord-button>
+                        <discord-button type="secondary">Next⏩</discord-button>
+                    </discord-action-row>
+                </discord-attachments>
             </discord-message>
         </discord-messages>
     </details>
@@ -811,20 +862,44 @@
             <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
             <t>/punishments</t>
-            <d>Information on Furnace's speeds.</d>
+            <d>All user's punishment's in guild.</d>
         </summary>
-        <p>The /ping command replies with information on the bots speed to the API and the bots
-            message latency.</p>
+        <p>Check memebers punishment history.</p>
         <discord-messages>
             <discord-message profile="furnace">
-                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                <discord-command slot="reply" profile="arr4nn" command="/punishments">
                 </discord-command>
                 <discord-embed slot="embeds" color="#0F52BA" footer-image="../assets/img/logo.png"
-                    embed-title="🏓 Pong">
-                    Latency <b>203ms</b>
-                    Api Latency <b>106ms</b>
+                    embed-title="ARR4NN2's History">
+                    -----------------------<br>
+                    <b>Type:</b> Kick<br>
+                    <b>ID:</b> 74<br>
+                    <b>Reason:</b> Unspecified<br>
+                    <b>Moderator:</b>
+                    <discord-mention>ARR4NN</discord-mention><br>
+                    <b>Time/Date:</b> 3 October 2021 16:16 / a minute ago<br>
+                    -----------------------<br>
+                    <b>Type:</b> Warning<br>
+                    <b>Punishment ID:</b> 73<br>
+                    <b>Reason:</b> Unspecified<br>
+                    <b>Member:</b>
+                    <discord-mention>ARR4NN</discord-mention><br>
+                    <b>Time/Date:</b> 3 October 2021 16:16 / a minute ago<br>
+                    -----------------------<br>
+                    <b>Type:</b> Ban<br>
+                    <b>Punishment ID:</b> 72<br>
+                    <b>Reason:</b> Unspecified<br>
+                    <b>Member:</b>
+                    <discord-mention>ARR4NN</discord-mention><br>
+                    <b>Time/Date:</b> 3 October 2021 16:16 / a minute ago<br>
                     <span slot="footer">Furnace</span>
                 </discord-embed>
+                <discord-attachments slot="components">
+                    <discord-action-row>
+                        <discord-button type="secondary" disabled>⏪Back</discord-button>
+                        <discord-button type="secondary">Next⏩</discord-button>
+                    </discord-action-row>
+                </discord-attachments>
             </discord-message>
         </discord-messages>
     </details>
@@ -838,21 +913,26 @@
             <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
             <t>/purge</t>
-            <d>Information on Furnace's speeds.</d>
+            <d>Nuke messages from a channel.</d>
         </summary>
-        <p>The /ping command replies with information on the bots speed to the API and the
-            bots
-            message latency.</p>
+        <p>Purge messages from a channel.</p>
         <discord-messages>
             <discord-message profile="furnace">
-                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                <discord-command slot="reply" profile="arr4nn" command="/purge">
                 </discord-command>
                 <discord-embed slot="embeds" color="#0F52BA" footer-image="../assets/img/logo.png"
-                    embed-title="🏓 Pong">
-                    Latency <b>203ms</b>
-                    Api Latency <b>106ms</b>
+                    embed-title="Message Purge">
+                    Are you sure you would like to purge<br>
+                    <b>1</b> messages?<br>
+                    Please confirm below.<br>
                     <span slot="footer">Furnace</span>
                 </discord-embed>
+                <discord-attachments slot="components">
+                    <discord-action-row>
+                        <discord-button type="success">Confirm</discord-button>
+                        <discord-button type="destructive">Cancel</discord-button>
+                    </discord-action-row>
+                </discord-attachments>
             </discord-message>
         </discord-messages>
     </details>
@@ -867,19 +947,17 @@
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
             </svg>
             <t>/resetwarnings</t>
-            <d>Information on Furnace's speeds.</d>
+            <d>Reset warnings of a member.</d>
         </summary>
-        <p>The /ping command replies with information on the bots speed to the API and
-            the bots
-            message latency.</p>
+        <p>Remove all warnings from a memeber.</p>
         <discord-messages>
             <discord-message profile="furnace">
-                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                <discord-command slot="reply" profile="arr4nn" command="/resetwarnings">
                 </discord-command>
                 <discord-embed slot="embeds" color="#0F52BA" footer-image="../assets/img/logo.png"
-                    embed-title="🏓 Pong">
-                    Latency <b>203ms</b>
-                    Api Latency <b>106ms</b>
+                    embed-title="Cleared All Warnings">
+                    Successfully Removed all warnings from <discord-mention>ARR4NN2</discord-mention>
+
                     <span slot="footer">Furnace</span>
                 </discord-embed>
             </discord-message>
@@ -895,19 +973,20 @@
             <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
             <t>/slowmode</t>
-            <d>Information on Furnace's speeds.</d>
+            <d>Toggle and set slowmode in a channel..</d>
         </summary>
-        <p>The /ping command replies with information on the bots speed to the API
-            and the bots
-            message latency.</p>
+        <p>Control slowmode in a channel</p>
         <discord-messages>
             <discord-message profile="furnace">
-                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                <discord-command slot="reply" profile="arr4nn" command="/slowmode">
                 </discord-command>
                 <discord-embed slot="embeds" color="#0F52BA" footer-image="../assets/img/logo.png"
-                    embed-title="🏓 Pong">
-                    Latency <b>203ms</b>
-                    Api Latency <b>106ms</b>
+                    embed-title="Slowmode Enabled">
+                    <discord-embed-fields slot="fields">
+                        <discord-embed-field field-title="Slowmode Duration">
+                            <discord-mention>10</discord-mention>
+                        </discord-embed-field>
+                    </discord-embed-fields>
                     <span slot="footer">Furnace</span>
                 </discord-embed>
             </discord-message>
@@ -923,20 +1002,17 @@
             <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
             <t>/sudo</t>
-            <d>Information on Furnace's speeds.</d>
+            <d>Send a message as a user.</d>
         </summary>
-        <p>The /ping command replies with information on the bots speed to the API and the bots
-            message latency.</p>
+        <p>Sudo a user. Send a message as a user.</p>
         <discord-messages>
             <discord-message profile="furnace">
-                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                <discord-command slot="reply" profile="arr4nn" command="/sudo">
                 </discord-command>
-                <discord-embed slot="embeds" color="#0F52BA" footer-image="../assets/img/logo.png"
-                    embed-title="🏓 Pong">
-                    Latency <b>203ms</b>
-                    Api Latency <b>106ms</b>
-                    <span slot="footer">Furnace</span>
-                </discord-embed>
+                Sent the sudo!
+            </discord-message>
+            <discord-message profile="arr4nn2bot">
+                I am not cool!
             </discord-message>
         </discord-messages>
     </details>
@@ -950,18 +1026,23 @@
             <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
             <t>/unban</t>
-            <d>Information on Furnace's speeds.</d>
+            <d>Unban a user from the guild.</d>
         </summary>
-        <p>The /ping command replies with information on the bots speed to the API and the bots
-            message latency.</p>
+        <p>Un-ban a member from the guild.</p>
         <discord-messages>
             <discord-message profile="furnace">
                 <discord-command slot="reply" profile="arr4nn" command="/ping">
                 </discord-command>
-                <discord-embed slot="embeds" color="#0F52BA" footer-image="../assets/img/logo.png"
-                    embed-title="🏓 Pong">
-                    Latency <b>203ms</b>
-                    Api Latency <b>106ms</b>
+                <discord-embed slot="embeds" color="#0F52BA" thumbnail="../assets/img/logo.png"
+                    footer-image="../assets/img/logo.png" embed-title="Member Un-Banned">
+                    <discord-embed-fields slot="fields">
+                        <discord-embed-field field-title="User">
+                            <discord-mention>ARR4NN2</discord-mention>
+                        </discord-embed-field>
+                        <discord-embed-field field-title="Un-Banned by">
+                            <discord-mention>ARR4NN</discord-mention>
+                        </discord-embed-field>
+                    </discord-embed-fields>
                     <span slot="footer">Furnace</span>
                 </discord-embed>
             </discord-message>
@@ -977,18 +1058,18 @@
             <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
             <t>/unwarn</t>
-            <d>Information on Furnace's speeds.</d>
+            <d>Remove a warning from a member.</d>
         </summary>
-        <p>The /ping command replies with information on the bots speed to the API and the bots
-            message latency.</p>
+        <p>Remove a warning from a member.</p>
         <discord-messages>
             <discord-message profile="furnace">
                 <discord-command slot="reply" profile="arr4nn" command="/ping">
                 </discord-command>
                 <discord-embed slot="embeds" color="#0F52BA" footer-image="../assets/img/logo.png"
-                    embed-title="🏓 Pong">
-                    Latency <b>203ms</b>
-                    Api Latency <b>106ms</b>
+                    embed-title="Removed warning 75">
+                    Successfully removed<br>
+                    Warn ID: <b>75</b><br>
+                    From: <discord-mention>ARR4NN2</discord-mention>.
                     <span slot="footer">Furnace</span>
                 </discord-embed>
             </discord-message>
@@ -1004,18 +1085,21 @@
             <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
             <t>/warn</t>
-            <d>Information on Furnace's speeds.</d>
+            <d>Warn a user for being naughty.</d>
         </summary>
-        <p>The /ping command replies with information on the bots speed to the API and the bots
-            message latency.</p>
+        <p>Warn a member with an optional reason.</p>
         <discord-messages>
             <discord-message profile="furnace">
                 <discord-command slot="reply" profile="arr4nn" command="/ping">
                 </discord-command>
                 <discord-embed slot="embeds" color="#0F52BA" footer-image="../assets/img/logo.png"
-                    embed-title="🏓 Pong">
-                    Latency <b>203ms</b>
-                    Api Latency <b>106ms</b>
+                    embed-title="Warned ARR4NN2">
+                    Successfully warned <discord-mention>ARR4NN2</discord-mention>.
+                    <discord-embed-fields slot="fields">
+                        <discord-embed-field field-title="Reason">
+                            Stop being so bad!
+                        </discord-embed-field>
+                    </discord-embed-fields>
                     <span slot="footer">Furnace</span>
                 </discord-embed>
             </discord-message>
@@ -1030,22 +1114,9 @@
             <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
             <t>/settings</t>
-            <d>Information on Furnace's speeds.</d>
+            <d>Configure Furnace to your requirements.</d>
         </summary>
-        <p>The /ping command replies with information on the bots speed to the API and the bots
-            message latency.</p>
-        <discord-messages>
-            <discord-message profile="furnace">
-                <discord-command slot="reply" profile="arr4nn" command="/ping">
-                </discord-command>
-                <discord-embed slot="embeds" color="#0F52BA" footer-image="../assets/img/logo.png"
-                    embed-title="🏓 Pong">
-                    Latency <b>203ms</b>
-                    Api Latency <b>106ms</b>
-                    <span slot="footer">Furnace</span>
-                </discord-embed>
-            </discord-message>
-        </discord-messages>
+        <p>Configure many aspects of how Furnace works in your guild.</p>
     </details>
     <!-- END OF COMMAND -->
     <!-- NEW COMMAND -->
@@ -1057,20 +1128,15 @@
             <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
             <t>/rank</t>
-            <d>Information on Furnace's speeds.</d>
+            <d>Get members XP card.</d>
         </summary>
-        <p>The /ping command replies with information on the bots speed to the API and the bots
-            message latency.</p>
+        <p>Get members XP / Rank card. Displaying: <br>× XP<br>× Rank<br>× Needed XP</p>
         <discord-messages>
             <discord-message profile="furnace">
-                <discord-command slot="reply" profile="arr4nn" command="/ping">
+                <discord-command slot="reply" profile="arr4nn" command="/rank">
                 </discord-command>
-                <discord-embed slot="embeds" color="#0F52BA" footer-image="../assets/img/logo.png"
-                    embed-title="🏓 Pong">
-                    Latency <b>203ms</b>
-                    Api Latency <b>106ms</b>
-                    <span slot="footer">Furnace</span>
-                </discord-embed>
+                <discord-attachment slot="attachments" height="141" width="467" url="../assets/img/arr4nnrank.jpg"
+                    alt="ARR4NN Rank" />
             </discord-message>
         </discord-messages>
     </details>

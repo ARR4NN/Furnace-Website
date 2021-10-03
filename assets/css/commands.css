@@ -1584,3 +1584,14 @@ maintable[open] .control-icon-expand {
     color: cyan;
 
 }
+
+.discord-embed .discord-embed-description {
+    font-size: 0.875rem;
+    font-weight: 10;
+    grid-column: 1/1;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    min-width: 0;
+    white-space: normal;
+}

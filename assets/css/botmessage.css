@@ -29,6 +29,18 @@ body {
 
 }
 
+pre code {
+    display: block;
+    background-color: #1d1d1d;
+    white-space: pre;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+    max-width: 100%;
+    min-width: 100px;
+    padding: 0;
+}
+
+
 .discord-replied-message.discord-executed-command .discord-replied-message-username:hover {
     margin-right: 0;
     text-decoration: underline;
